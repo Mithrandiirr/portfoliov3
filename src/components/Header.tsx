@@ -7,7 +7,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({}) => {
         return (
-            <header className='flex flex-row p-12'>
+            <header className='flex flex-row px-40 pt-8'>
                 <Link href={'/'} className='rounded-full border-2 border-black text-black text-lg py-1 px-6'>{"Let's talk"}</Link>
                 <ul className='flex flex-row gap-8 justify-end flex-1 '>
                     <li>
