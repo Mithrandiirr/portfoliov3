@@ -16,6 +16,13 @@ module.exports = {
     fontFamily: {
       'sora': 'Sora',
       'roslindale': "Roslindale Display Regular"
+    },
+    screens: {
+      '2xl' : {'max': '1530px'},
+      'xl' : {'max' : '1400px'},
+      'lg' : {'max' : '1300px'},
+      'base': {'max': '1150px'},
+      'sm' : {'max' : '500px'}
     }
   },
   plugins: [],
