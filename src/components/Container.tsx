@@ -35,7 +35,7 @@ export const Container: React.FC<ContainerProps> = ({value}) => {
                     </a>
                 </div>
                 <Header />
-                <div className='mt-16 flex flex-row gap-12 pl-32 2xl:pl-24 xl:pl-10 base:flex-col lg:px-8'>
+                <div className='mt-16 flex flex-row gap-16 pl-32 2xl:pl-24 xl:pl-10 base:flex-col lg:px-8'>
                 <div className='flex justify-start mt-24  items-start gap-4 text-center lg:pl-0 lg:items-center font-roslindale text-8xl pl-8 text-black flex-col lg:text-7xl sm:text-4xl'>
                     <Image priority width={100} height={100} src={urlFor(value.picture).url()} alt='Profile' className='rounded-full' />
                     {value.name}
