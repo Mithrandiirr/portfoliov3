@@ -22,10 +22,9 @@ export const Container: React.FC<ContainerProps> = ({value}) => {
   
   },
 }
-
         return (
             <div className=''>
-                <div className='absolute right-12 bottom-4'>
+                {/* <div className='absolute right-12 bottom-4'>
                     <a href={"#work"}>
 <svg width="30" height="68" viewBox="0 0 30 68" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.5858 67.4142C14.3668 68.1953 15.6332 68.1953 16.4142 67.4142L29.1421 54.6863C29.9232 53.9052 29.9232 52.6389 29.1421 51.8579C28.3611 51.0768 27.0948 51.0768 26.3137 51.8579L15 63.1716L3.68629 51.8579C2.90524 51.0768 1.63891 51.0768 0.857864 51.8579C0.0768158 52.6389 0.0768158 53.9052 0.857864 54.6863L13.5858 67.4142ZM13 0L13 66H17L17 0L13 0Z" fill="black"/>
@@ -33,7 +32,7 @@ export const Container: React.FC<ContainerProps> = ({value}) => {
 
 
                     </a>
-                </div>
+                </div> */}
                 <Header />
                 <div className='mt-16 flex flex-row gap-16 pl-32 2xl:pl-24 xl:pl-10 base:flex-col lg:px-8'>
                 <div className='flex justify-start mt-24  items-start gap-4 text-center lg:pl-0 lg:items-center font-roslindale text-8xl pl-8 text-black flex-col lg:text-7xl sm:text-4xl'>
@@ -74,7 +73,7 @@ export const Container: React.FC<ContainerProps> = ({value}) => {
 
                     </div>
                 </div>
-                <div className='flex flex-row w-full justify-center pt-4 pb-12 gap-8 max-h-[650px] base:max-h-full base:justify-start base:flex-col  overflow-y-scroll details pr-40 2xl:pr-20 xl:pr-9 lg:pr-0'>
+                <div className='flex flex-row w-full justify-center pt-4 pb-12 gap-8 max-h-[650px] les base:max-h-full base:justify-start base:flex-col  overflow-y-scroll details pr-40 2xl:pr-20 xl:pr-9 lg:pr-0'>
                     <div className='flex flex-col flex-[.6] mt-4'>
                         <p className='font-sora font-extralight text-black text-2xl lg:text-xl'>
                         Developer and designer based in Morocco.

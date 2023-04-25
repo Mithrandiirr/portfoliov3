@@ -23,6 +23,11 @@ export default function Home({homepage} : any) {
     <Layout>
       <Head>
         <title>EL Yaakoubi Mohammed - JAMstack & Frontend expert.</title>
+        <meta
+        name="description"
+        content="El Yaakoubi Mohammed based in Morocco, I build blazingly fast, craft sophiscated and visually captivating web applications."
+      />
+        <meta property="og:image" content={'./img.png'} />
       </Head>
       <PortableText components={myPortableTextComponents} value={homepage} />
     </Layout>
