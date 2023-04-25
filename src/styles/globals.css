@@ -6,7 +6,13 @@
     background-color: black;
     color: white;
 }
+.project::-webkit-scrollbar {
+  display: none;
+}
+*, html {
 
+    scroll-behavior: smooth !important;
+}
 body {
     margin: 0;
     min-height: 100%;
@@ -17,6 +23,10 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
+    scroll-behavior: smooth;
+}
+img {
+    user-select: none;
 }
 * {
     -webkit-font-smoothing: antialiased;
@@ -77,6 +87,7 @@ body {
 .details::-webkit-scrollbar {
   display: none;
 }
+
 .main {
 
     background: linear-gradient(rgba(255,255,255,0.2) 0px, rgba(255,255,255,1) 400px);

@@ -19,10 +19,13 @@ module.exports = {
     },
     screens: {
       '2xl' : {'max': '1530px'},
+      '2xls' : {'max': '1450px'},
       'xl' : {'max' : '1400px'},
       'lg' : {'max' : '1300px'},
+      'xlg': {'max' : '1200px'},
       'base': {'max': '1150px'},
-      'sm' : {'max' : '500px'}
+      'sm' : {'max' : '500px'},
+      'small': {'max' : '400px'}
     }
   },
   plugins: [],
