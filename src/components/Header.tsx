@@ -3,7 +3,7 @@ import React from "react";
 
 interface HeaderProps {}
 
-export const Header: React.FC<HeaderProps> = ({}) => {
+export const Header: React.FC<HeaderProps> = () => {
   return (
     <header className="flex flex-row px-40 pt-8 2xl:px-28 lg:px-12 base:px-8 sm:justify-center  ">
       <Link

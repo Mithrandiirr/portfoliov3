@@ -4,17 +4,17 @@ import { Container } from "@/components/Container";
 import { getHomeData, getProjects } from "@/lib/sanity.client";
 import { PortableText } from "@portabletext/react";
 import Head from "next/head";
+import { Homepage } from "@/lib/sanity.types";
 
 const inter = Inter({ subsets: ["latin"] });
+const myPortableTextComponents = {
+  types: {
+    home: ({ value }: any) => <Container value={value} />,
+  },
 
-export default function Home({ homepage }: any) {
-  const myPortableTextComponents = {
-    types: {
-      home: ({ value }: any) => <Container value={value} />,
-    },
-
-    marks: {},
-  };
+  marks: {},
+};
+export default function Home({ homepage }: { homepage: any }) {
   return (
     <Layout>
       <Head>

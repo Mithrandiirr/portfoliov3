@@ -1,48 +1,58 @@
 import Image from "next/image";
 import React from "react";
-import NextJs from "../assets/nextjs.png";
-import Gatsby from "../assets/gg.png";
-import Remix from "../assets/remix.png";
-import Graphql from "../assets/gr.png";
-import NodeJs from "../assets/nodejs.png";
-import Sanity from "../assets/sss.png";
-import Shopify from "../assets/shopify.png";
-import Ts from "../assets/tys.png";
-interface LoopProps {}
+import { Homepage, Loop as LoopStacks, TechStacks } from "@/lib/sanity.types";
+import { urlFor } from "@/utils/urlBuilder";
+interface LoopProps {
+  techs: Homepage;
+}
 
-export const Loop: React.FC<LoopProps> = ({}) => {
+export const Loop: React.FC<LoopProps> = ({ techs }) => {
   return (
     <div>
       <div className="w-full overflow-hidden flex relative mt-3">
         <div className="loop-content scroll">
-          <Image src={NextJs} alt="next" />
-
-          <Image src={Gatsby} alt="next" />
-          <Image src={Remix} alt="next" />
-          <Image src={Graphql} alt="next" />
+          {techs.loop.techStacks.map((t) => (
+            <Image
+              key={t._key}
+              src={urlFor(t.image).url()}
+              width={200}
+              height={100}
+              alt="next"
+            />
+          ))}
         </div>
-        <div className="loop-content scroll">
-          <Image src={NextJs} alt="next" />
-
-          <Image src={Gatsby} alt="next" />
-          <Image src={Remix} alt="next" />
-          <Image src={Graphql} alt="next" />
-        </div>
+        {techs.loop.techStacks.map((t) => (
+          <Image
+            key={t._key}
+            src={urlFor(t.image).url()}
+            width={200}
+            height={100}
+            alt="next"
+          />
+        ))}
       </div>
       <div className="w-full overflow-hidden flex relative mt-3">
         <div className="loop-content scrollr">
-          <Image src={Sanity} alt="next" />
-
-          <Image src={NodeJs} alt="next" />
-          <Image src={Ts} alt="next" />
-          <Image src={Shopify} alt="next" />
+          {techs.loop.techStacksReversed.map((t) => (
+            <Image
+              key={t._key}
+              src={urlFor(t.image).url()}
+              width={200}
+              height={100}
+              alt="next"
+            />
+          ))}
         </div>
         <div className="loop-content scrollr">
-          <Image src={Sanity} alt="next" />
-
-          <Image src={NodeJs} alt="next" />
-          <Image src={Ts} alt="next" />
-          <Image src={Shopify} alt="next" />
+          {techs.loop.techStacksReversed.map((t) => (
+            <Image
+              key={t._key}
+              src={urlFor(t.image).url()}
+              width={200}
+              height={100}
+              alt="next"
+            />
+          ))}
         </div>
       </div>
     </div>

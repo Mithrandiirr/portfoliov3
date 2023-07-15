@@ -89,7 +89,7 @@ export const Container: React.FC<ContainerProps> = ({ value }) => {
               <h2 className="font-sora font-normal text-2xl mt-8">
                 Technologies:
               </h2>
-              <Loop />
+              <Loop techs={value} />
             </div>
             <div className="flex flex-col mt-4">
               <h2 className="font-sora font-normal text-2xl mt-8">Work:</h2>
