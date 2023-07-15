@@ -9,15 +9,14 @@ import { PortableText } from "@portabletext/react";
 interface ContainerProps {
   value: any;
 }
+const myPortableTextComponents = {
+  types: {
+    projectCases: ({ value }: any) => <Work value={value} />,
+  },
 
+  marks: {},
+};
 export const Container: React.FC<ContainerProps> = ({ value }) => {
-  const myPortableTextComponents = {
-    types: {
-      projectCases: ({ value }: any) => <Work value={value} />,
-    },
-
-    marks: {},
-  };
   return (
     <div className="">
       <Header />
